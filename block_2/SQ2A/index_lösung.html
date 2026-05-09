@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>02A - Aufgabe</title>
+    <style>
+        /* Styling for the div that holds all buttons*/
+        #buttons {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        }
+
+        /* Styling for the button */
+        .btn {
+        display: inline-block;
+        font-size: 2em;
+        padding: 10px;
+        margin: 10px;
+        }
+    </style>
+
+</head>
+<body>
+    <div id="buttons">
+        <button id="btn1" class="btn">Button 1</button>
+        <button id="btn2" class="btn">Button 2</button>
+        <button id="btn3" class="btn">Button 3</button>
+    </div>
+
+    <script>        
+        /* Aufgabe 3*/
+        // this is the function that will be executed
+        // when the loaded event is triggered on the window
+        // the window object represents the browser window
+        // and the loaded event is triggered when the page is fully loaded
+        window.addEventListener('load', function() {
+            
+            /* Aufgabe 1 */
+            // a querySelectorAll() method returns a NodeList of all elements that match the specified selector
+            // in this case all elements with the class btn
+            // then the forEach() method is called on the NodeList
+            // and for each element in the NodeList the function is executed
+            document.querySelectorAll('.btn').forEach(function(btn){
+                console.log('function forEachButton Aufgabe1 was exectuted now')
+                // an event listener is added to the button
+                // when a mouseover event occurs
+                // the function is executed
+                // and the style of the button is changed
+                btn.addEventListener('mouseover', function(){
+                    event.target.style = 'background-color:#8F4'
+                })
+                // when a mouseleave event occurs
+                // the function is executed
+                // and the style of the button is changed
+                btn.addEventListener('mouseleave', function(){
+                    event.target.style = 'background-color:light-grey'
+                })
+            })
+
+            /* Aufgabe 2 */
+            // a querySelectorAll() method returns a NodeList of all elements that match the specified selector
+            // in this case all elements with the class btn
+            // then the forEach() method is called on the NodeList
+            // and for each element in the NodeList the function is executed
+            document.querySelectorAll('.btn').forEach(function(btn){
+                console.log('function forEachButton Aufgabe2 was exectuted now')
+                // an event listener is added to the button
+                // when a click event occurs the function is executed
+                btn.addEventListener('click', function(){
+                    console.log("Hi, I'm function on btn "+event.target.innerHTML)
+                    // now when the Content of the clicked button is "Button 2"
+                    // we will call event.stopPropagation(), which stops the event from bubbling up to the parent element
+                    // in this case the parent element is the div with the ID buttons
+                    // so the event will not be triggered on the parent element
+                    if(event.target.innerHTML == "Button 2"){
+                        event.stopPropagation()
+                    }
+                })
+            })
+            // the event listener is added to the parent element of the buttons
+            // when a click event occurs the function is executed
+            // and the event is bubbling up to the parent element
+            document.querySelector('#buttons').addEventListener('click', function(){
+                console.log("Hi, I'm bubbling up... "+event.target)
+            })
+
+        })
+    </script>
+</body>
+</html>
