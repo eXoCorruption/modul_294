@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>02A - Aufgabe</title>
+    <style>
+      /* Styling for the div that holds all buttons*/
+      #buttons {
+        display: grid;
+        grid-template-columns: auto auto auto;
+      }
+
+      /* Styling for the button */
+      .btn {
+        display: inline-block;
+        font-size: 2em;
+        padding: 10px;
+        margin: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="buttons">
+      <button id="btn1" class="btn">Button 1</button>
+      <button id="btn2" class="btn">Button 2</button>
+      <button id="btn3" class="btn">Button 3</button>
+    </div>
+
+    <script>
+      /* Demo */
+      // Assignment of the element in the DOM with the ID btn1 to a variable btn1
+      // with this variable we can access the element in the DOM
+      let btn1 = document.querySelector("#btn1");
+      // Listen for the click event on the button
+      // and execute the function when the event occurs
+      btn1.addEventListener("click", function () {
+        // event.target is the element that triggered the event
+        // in this case the button with the ID btn1
+        // and we can access the innerHTML of the button
+        // and log it to the console
+        console.log("Hi, I'm function Demo on btn " + event.target.innerHTML);
+      });
+
+      // Another Event Listener on the same button
+      // This will not overwrite the first event listener
+      // but add another one to the button
+      btn1.addEventListener("click", function () {
+        console.log(
+          "Hi, I'm another function Demo on btn " + event.target.innerHTML
+        );
+
+      });
+      let btn2 = document.querySelector("#btn2");
+      btn2.addEventListener("click", function () {
+        console.log("Hi, I'm function Demo on btn " + event.target.innerHTML);
+      });
+      let btn3 = document.querySelector("#btn3");
+      btn3.addEventListener("click", function() {
+        console.log("Hi, I'm function Demo on btn " + event.target.innerHTML);
+      });
+      btn3.addEventListener("click", function () {
+        console.log(
+          "Hi, I'm another function Demo on btn " + event.target.innerHTML);
+      });
+    </script>
+  </body>
+</html>
