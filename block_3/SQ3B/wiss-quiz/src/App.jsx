@@ -9,6 +9,7 @@ function App() {
       <p>Hier wird bald unser Quiz starten.</p>
       <Welcome />
       <Welcome />
+      <p> </p>
       <Footer />
     </div>
   );
