@@ -43,6 +43,10 @@ function Counter() {
     setCountClicks(countClicks + 1);
   };
 
+  const resetClickCounter = () => {
+    setCountClicks(0);
+  };
+
   return (
     <div>
       <button onClick={toggle}>
@@ -59,6 +63,7 @@ function Counter() {
         <button onClick={verringern}>-1</button>
         <button onClick={minusZehn}>-10</button>
         <button onClick={reset}>Reset</button>
+        <button onClick={resetClickCounter}>Reset anzahl aller buttons geklickt</button>
       </div>
      )}
     </div>
