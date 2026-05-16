@@ -1,6 +1,7 @@
 import './App.css';
 import Welcome from './Welcome';
 import Footer from './Footer'
+import Counter from './Counter'
 
 function App() {
   return (
@@ -8,7 +9,8 @@ function App() {
       <h1>Willkommen beim WISS-Quiz!</h1>
       <p>Hier wird bald unser Quiz starten.</p>
       <Welcome />
-      <Welcome />
+      <Counter />
+      <Counter />
       <Footer />
     </div>
   );
