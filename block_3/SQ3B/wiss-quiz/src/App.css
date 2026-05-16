@@ -17,6 +17,10 @@
   }
 }
 
+.background {
+  background: lightblue;
+}
+
 .hero {
   position: relative;
 
