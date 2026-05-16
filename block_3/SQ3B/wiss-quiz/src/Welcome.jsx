@@ -1,4 +1,5 @@
 function Welcome() {
+    const username = "Anna";
   return (
     <div>
       <h2>Hallo Spieler!</h2>
