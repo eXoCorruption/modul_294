@@ -1,7 +1,8 @@
 const square = function(x) {
     return x * x;
 };
-console.log("Square of 2 is: " + square(2));
+let square1 = square(2)
+console.log("Square of 2: " + square1);
 
 const dogBark = function() {
     console.log("Bark!");
@@ -39,10 +40,19 @@ const hummus = function(factor) {
     ingredient(2, "tablespoon", "olive oil");
     ingredient(0.5, "teaspoon", "cumin");
 };
-
+console.log("Closer:")
 function wrapValue(n) {
     let local = n;
     return () => local;
 }
 let wrap1 = wrapValue(1);
-console.log(wrap1())
+console.log(wrap1());
+
+
+function multiplier(factor) {
+    return number => number * factor;
+}
+let twice = multiplier(2);
+let fiveTimes = multiplier(5);
+console.log(twice(7));
+console.log(fiveTimes(10));
