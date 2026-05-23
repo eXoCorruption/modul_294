@@ -1,4 +1,3 @@
-import Footer from './Footer'
 import { useState } from 'react';
 import Button from './Button';
 const question = {
