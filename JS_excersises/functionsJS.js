@@ -74,3 +74,31 @@ console.log(isEven(75));
 // → false
 console.log(isEven(-1));
 // → ??
+
+
+const countBs = function(String) {
+  let counter = 0;
+  for (let i = 0; i < String.length; i++) {
+    if (String[i] === "B") {
+        counter++;
+    }
+  }
+  return counter;
+}
+
+
+const countChar = function(string, char) {
+   let count = 0;
+   for (let i = 0; i < string.length; i++) {
+     if (string[i] === char) {
+       count++;
+       }
+   }
+   return count;
+}
+console.log("Mit dieser Funktion wird Spezifisch das \"B\" gezählt:")
+console.log(countBs("BOB"));
+// → 2
+console.log("Mit dieser Funktion wird das übergebene Argument gezählt:")
+console.log(countChar("kakkerlak", "k"));
+// → 4
