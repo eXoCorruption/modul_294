@@ -4,7 +4,7 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
-  background-color: #05050593;
+  background-color: #ffffff93;
 }
 
 #root {
@@ -226,4 +226,8 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+}
+.App-nav a.active {
+  font-weight: bold;
+  text-decoration: underline;
 }
