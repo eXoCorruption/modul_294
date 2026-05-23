@@ -1,12 +1,21 @@
-import './App.css';
-import GameSession from './components/GameSession';
+import { Routes, Route } from "react-router-dom";
+import Layout from "./components/Layout";
+import Home from "./pages/Home";
+import Game from "./pages/Game";
+import Rules from "./pages/Rules";
+import Impressum from "./pages/Impressum";
+import "./App.css";
 
 function App() {
   return (
-    <div>
-      <h1>Willkommen beim WISS-Quiz!</h1>
-      <GameSession />
-    </div>
+    <Routes>
+      <Route path="/" element={<Layout />}>
+        <Route index element={<Home />} />
+        <Route path="quiz" element={<Game />} />
+        <Route path="regeln" element={<Rules />} />
+        <Route path="impressum" element={<Impressum />} />
+      </Route>
+    </Routes>
   );
 }
 
