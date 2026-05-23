@@ -56,3 +56,21 @@ let twice = multiplier(2);
 let fiveTimes = multiplier(5);
 console.log(twice(7));
 console.log(fiveTimes(10));
+
+
+const isEven = function(x) {
+     if ( x % 2 == 0) {
+       return true;
+       } else if ( x % 2 == 1) {
+       return false;
+       } else if ( x <= 0 ) {
+       return "??";
+       }
+  }
+
+console.log(isEven(50));
+// → true
+console.log(isEven(75));
+// → false
+console.log(isEven(-1));
+// → ??
