@@ -16,6 +16,10 @@
     outline-offset: 2px;
   }
 }
+.App-nav a.active {
+  font-weight: bold;
+  text-decoration: underline;
+}
 
 .hero {
   position: relative;
