@@ -75,7 +75,7 @@ console.log(isEven(75));
 console.log(isEven(-1));
 // → ??
 
-
+// Mit dieser Funktion wird Spezifisch das \"B\" gezählt:
 const countBs = function(String) {
   let counter = 0;
   for (let i = 0; i < String.length; i++) {
@@ -86,7 +86,7 @@ const countBs = function(String) {
   return counter;
 }
 
-
+// Mit dieser Funktion wird das übergebene Argument gezählt:
 const countChar = function(string, char) {
    let count = 0;
    for (let i = 0; i < string.length; i++) {

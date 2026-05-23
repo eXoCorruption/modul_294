@@ -1,0 +1,209 @@
+{
+  "questions": [
+    {
+      "id": "1",
+      "category": "Sport",
+      "difficulty": "leicht",
+      "text": "Welches Land hat die meisten FIFA-Weltmeisterschaften gewonnen?",
+      "answers": ["Brasilien", "Italien", "Argentinien", "Deutschland"],
+      "correctAnswer": "Brasilien"
+    },
+    {
+      "id": "2",
+      "category": "Technologie",
+      "difficulty": "leicht",
+      "text": "Was bedeutet die Abkürzung 'HTTP'?",
+      "answers": [
+        "HyperText Transfer Protocol",
+        "HyperText Transmission Protocol",
+        "HyperText Transfer Program",
+        "HyperText Transmission Program"
+      ],
+      "correctAnswer": "HyperText Transfer Protocol"
+    },
+    {
+      "id": "3",
+      "category": "Geographie",
+      "difficulty": "mittel",
+      "text": "Welches ist der höchste Berg gemessen von seiner Unterwasserbasis?",
+      "answers": ["Mount Everest", "Mauna Kea", "K2", "Kangchenjunga"],
+      "correctAnswer": "Mauna Kea"
+    },
+    {
+      "id": "4",
+      "category": "Geschichte",
+      "difficulty": "mittel",
+      "text": "In welchem Jahr wurde die Schweizerische Eidgenossenschaft gegründet?",
+      "answers": ["1291", "1315", "1351", "1499"],
+      "correctAnswer": "1291"
+    },
+    {
+      "id": "5",
+      "category": "Sport",
+      "difficulty": "schwer",
+      "text": "Wieviele Spieler stehen bei einem Cricket Match auf dem Feld?",
+      "answers": ["9", "10", "11", "13"],
+      "correctAnswer": "13"
+    },
+    {
+      "id": "6",
+      "category": "Geographie",
+      "difficulty": "leicht",
+      "text": "Welcher ist der längste Fluss der Welt?",
+      "answers": ["Amazonas", "Nil", "Yangtze", "Missisippi"],
+      "correctAnswer": "Nil"
+    },
+    {
+      "id": "7",
+      "category": "Geschichte",
+      "difficulty": "leicht",
+      "text": "In welchem Jahrhundert fand die Französische Revolution statt?",
+      "answers": ["17. Jahrhundert", "18. Jahrhundert", "19. Jahrhundert", "20. Jahrhundert"],
+      "correctAnswer": "18. Jahrhundert"
+    },
+    {
+      "id": "8",
+      "category": "Technologie",
+      "difficulty": "mittel",
+      "text": "Wer gilt als Erfinder des Internets?",
+      "answers": ["Bill Gates", "Steve Jobs", "Tim Berners-Lee", "Mark Zuckerberg"],
+      "correctAnswer": "Tim Berners-Lee"
+    },
+    {
+      "id": "9",
+      "category": "Sport",
+      "difficulty": "leicht",
+      "text": "Wie viele Spieler hat eine Basketball-Mannschaft auf dem Platz?",
+      "answers": ["4", "5", "6", "7"],
+      "correctAnswer": "5"
+    },
+    {
+      "id": "10",
+      "category": "Geographie",
+      "difficulty": "mittel",
+      "text": "Welche Stadt ist die Hauptstadt von Australien?",
+      "answers": ["Sydney", "Melbourne", "Canberra", "Brisbane"],
+      "correctAnswer": "Canberra"
+    },
+    {
+      "id": "11",
+      "category": "Geschichte",
+      "difficulty": "mittel",
+      "text": "In welchem Jahr fiel die Berliner Mauer?",
+      "answers": ["1987", "1988", "1989", "1990"],
+      "correctAnswer": "1989"
+    },
+    {
+      "id": "12",
+      "category": "Technologie",
+      "difficulty": "leicht",
+      "text": "Welches Unternehmen hat das Betriebssystem Windows entwickelt?",
+      "answers": ["Apple", "Microsoft", "Google", "IBM"],
+      "correctAnswer": "Microsoft"
+    },
+    {
+      "id": "13",
+      "category": "Sport",
+      "difficulty": "mittel",
+      "text": "Wie oft wurde Pelé Weltmeister?",
+      "answers": ["1", "2", "3", "4"],
+      "correctAnswer": "3"
+    },
+    {
+      "id": "14",
+      "category": "Geographie",
+      "difficulty": "schwer",
+      "text": "Welcher Berg ist der zweitanköchste Berg der Welt?",
+      "answers": ["K2", "Kangchenjunga", "Lhotse", "Makalu"],
+      "correctAnswer": "K2"
+    },
+    {
+      "id": "15",
+      "category": "Geschichte",
+      "difficulty": "schwer",
+      "text": "In welchem Jahr fand die Schlacht von Waterloo statt?",
+      "answers": ["1813", "1814", "1815", "1816"],
+      "correctAnswer": "1815"
+    },
+    {
+      "id": "16",
+      "category": "Technologie",
+      "difficulty": "mittel",
+      "text": "Welche Programmiersprache wurde von Guido van Rossum entwickelt?",
+      "answers": ["Java", "Python", "C++", "JavaScript"],
+      "correctAnswer": "Python"
+    },
+    {
+      "id": "17",
+      "category": "Sport",
+      "difficulty": "schwer",
+      "text": "Wie viele olympische Ringe gibt es?",
+      "answers": ["4", "5", "6", "7"],
+      "correctAnswer": "5"
+    },
+    {
+      "id": "18",
+      "category": "Geographie",
+      "difficulty": "leicht",
+      "text": "Wie viele Kontinente gibt es?",
+      "answers": ["5", "6", "7", "8"],
+      "correctAnswer": "7"
+    },
+    {
+      "id": "19",
+      "category": "Geschichte",
+      "difficulty": "leicht",
+      "text": "Wer war der erste Präsident der USA?",
+      "answers": ["Thomas Jefferson", "George Washington", "John Adams", "Benjamin Franklin"],
+      "correctAnswer": "George Washington"
+    },
+    {
+      "id": "20",
+      "category": "Technologie",
+      "difficulty": "schwer",
+      "text": "In welchem Jahr wurde der erste kommerziell vermarktete Computer hergestellt?",
+      "answers": ["1945", "1951", "1956", "1960"],
+      "correctAnswer": "1951"
+    },
+    {
+      "id": "21",
+      "category": "Sport",
+      "difficulty": "leicht",
+      "text": "Wie lange dauert eine Eishockey-Partie?",
+      "answers": ["60 Minuten", "70 Minuten", "80 Minuten", "90 Minuten"],
+      "correctAnswer": "60 Minuten"
+    },
+    {
+      "id": "22",
+      "category": "Geographie",
+      "difficulty": "mittel",
+      "text": "Welcher Fluss fließt durch Paris?",
+      "answers": ["Rhein", "Loire", "Seine", "Maas"],
+      "correctAnswer": "Seine"
+    },
+    {
+      "id": "23",
+      "category": "Geschichte",
+      "difficulty": "mittel",
+      "text": "In welchem Jahr wurde die Titanic versenkt?",
+      "answers": ["1910", "1911", "1912", "1913"],
+      "correctAnswer": "1912"
+    },
+    {
+      "id": "24",
+      "category": "Technologie",
+      "difficulty": "leicht",
+      "text": "Wer hat das World Wide Web erfunden?",
+      "answers": ["Steve Jobs", "Tim Berners-Lee", "Larry Page", "Sergey Brin"],
+      "correctAnswer": "Tim Berners-Lee"
+    },
+    {
+      "id": "25",
+      "category": "Sport",
+      "difficulty": "mittel",
+      "text": "In wie vielen Jahren findet die Olympiade statt?",
+      "answers": ["2 Jahren", "3 Jahren", "4 Jahren", "5 Jahren"],
+      "correctAnswer": "4 Jahren"
+    }
+  ]
+}
