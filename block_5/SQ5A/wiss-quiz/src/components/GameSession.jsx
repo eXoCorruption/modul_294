@@ -2,6 +2,7 @@ import { useState } from 'react';
 import Button from './Button';
 
 function GameSession({ questions = [] }) {
+  const [showScore, setShowScore] = useState(false);
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
   const [feedback, setFeedback] = useState(null);
   const [score, setScore] = useState(0);
@@ -9,9 +10,11 @@ function GameSession({ questions = [] }) {
 
   if (!questions || questions.length === 0) {
     return <div>Keine Fragen verfügbar</div>;
+
   }
 
   const currentQuestion = questions[currentQuestionIndex];
+  const isLastQuestion = currentQuestionIndex === questions.length - 1;
 
   const handleAnswerClick = (selectedAnswer) => {
     setIsAnswered(true);
@@ -32,6 +35,28 @@ function GameSession({ questions = [] }) {
     }
   };
 
+  const handleEndGame = () => {
+    setShowScore(true);
+  };
+
+  const resetGame = () => {
+    setCurrentQuestionIndex(0);
+    setFeedback(null);
+    setScore(0);
+    setIsAnswered(false);
+    setShowScore(false);
+  };
+
+  if (showScore) {
+    return (
+      <div>
+        <h2>Spiel beendet!</h2>
+        <p>Du hast {score} von {questions.length} richtig.</p>
+        <Button text="Neues Spiel" onClick={resetGame} />
+      </div>
+    );
+  }
+
   return (
     <div>
       <p>Punkte: {score}</p>
@@ -49,8 +74,12 @@ function GameSession({ questions = [] }) {
       </div>
 
       {feedback && <p>{feedback}</p>}
-      {isAnswered && currentQuestionIndex < questions.length - 1 && (
-        <Button text="Nächste Frage" onClick={handleNext} />
+      {isAnswered && !isLastQuestion && (
+        <Button onClick={handleNext} text="Weiter" />
+      )}
+
+      {isAnswered && isLastQuestion && (
+        <Button onClick={handleEndGame} text="Spiel beenden" />
       )}
     </div>
   );
